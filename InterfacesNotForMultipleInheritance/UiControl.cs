@@ -7,7 +7,30 @@ using System.Threading.Tasks;
 namespace InterfacesNotForMultipleInheritance
 {
     public class UiControl
-    {
+    {   
+        public class Textbox : UiControl, Idraggable, IDroppable
+        {
+            /*
+            If you add Size to line 11
+            our class cannot have multiple basic classes. But what we can do here is to have this text box implement multiple interfaces so we can say it implements
+            */
+
+            public void Drag()
+            {
+                throw new NotImplementedException();
+            }
+
+            public void Drop()
+            {
+                throw new NotImplementedException();
+
+            }
+
+
+        }
+
+
+
         public string Id { get; set; }
         public Size Size { get; set; }
         public Position TopLeft { get; set; }  
