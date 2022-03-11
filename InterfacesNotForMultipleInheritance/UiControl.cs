@@ -12,7 +12,11 @@ namespace InterfacesNotForMultipleInheritance
         {
             /*
             If you add Size to line 11
-            our class cannot have multiple basic classes. But what we can do here is to have this text box implement multiple interfaces so we can say it implements
+            our class cannot have multiple basic classes. But what we can do here is to have this text box implement multiple interfaces so we can say it implements.
+
+            So when we go and implement that interface in a class like a text box we have to type that method declaration again and then actually implement it. So there is no code to inherit.
+            There is no reusability. And that's the reason that I explain interfaces got nothing to do with inheritance.
+
             */
 
             public void Drag()
